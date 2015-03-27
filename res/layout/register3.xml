@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/textmini"
+        android:layout_marginRight="@dimen/textmini" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textmini"
+                android:text="最后一步啦~！完善以下内容，您就可以成为我们的认证司机，旅行者会优先选择认证司机" />
+
+            <Button
+                android:id="@+id/but_sendtouxiang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textmini"
+                android:background="@drawable/loginbackground"
+                android:text="点击上传司机头像" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textmini"
+                android:text="本人半身生活照，便于向旅行者展示" />
+
+            <Button
+                android:id="@+id/but_sendsijijiashizheng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textmini"
+                android:background="@drawable/loginbackground"
+                android:text="点击上传司机驾驶证" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textmini"
+                android:gravity="center"
+                android:text="作为认证资料，不会公开" />
+
+            <Button
+                android:id="@+id/but_sendcarjiashizheng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textmini"
+                android:background="@drawable/loginbackground"
+                android:text="点击上传车辆行驶证" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textmini"
+                android:gravity="center"
+                android:text="作为认证资料，不会公开" />
+
+            <Button
+                android:id="@+id/but_sendyingyunzheng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textmini"
+                android:background="@drawable/loginbackground"
+                android:text="点击上传营运证" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textmini"
+                android:gravity="center"
+                android:text="输入推荐人手机号，您和推荐人都将获赠10积分，积分决定排名" />
+
+            <EditText
+                android:id="@+id/et_jieshaoren"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/linemin"
+                android:layout_marginTop="@dimen/textmini" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textmini"
+                android:gravity="center"
+                android:text="立即输入推荐人手机号，提升排名！" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textmini"
+                android:background="@drawable/loginbackground"
+                android:gravity="center"
+                android:onClick="submit"
+                android:text="下一步"
+                android:textColor="@color/loginfront" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textmini"
+                android:background="@drawable/loginbackground"
+                android:gravity="center"
+                android:onClick="xiayibu"
+                android:text="暂不完善"
+                android:textColor="@color/loginfront" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

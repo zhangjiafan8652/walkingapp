@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">走着旅行</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="maintitil">走着旅行</string>
+    <!-- 接单记录字段 -->
+    <string name="grabsingle">抢单功能已开</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- 接单记录listviewitem中的字段 -->
+    <string name="lisview_item_passagenumber">乘客数：</string>
+    <string name="lisview_item_earnest">已付全款：</string>
+    <string name="lisview_item_remainmoney">已付全款：</string>
+    <string name="lisview_item_customer">联系人：</string>
+    <string name="lisview_item_customer_phone">联系人电话：</string>
+
+    <color name="blue">#6AC5F2</color>
+
+    <string name="dayuhao">\></string>
+    <string name="title_activity_route_editor_">Route_editor_Activity</string>
+    <string name="title_activity_route_">Route_Activity</string>
+    <string name="title_activity_login_">Login_Activity</string>
+    <string name="title_activity_splash_">Splash_Activity</string>
+    <string name="title_activity_rules_">Rules_Activity</string>
+    <string name="title_activity_enterin_">Enterin_Activity</string>
+
+    <!-- drowouttimexml -->
+    <string name="drowouttime_text1">点击日期就可以修改出车状态</string>
+    <string name="drowouttime_text2">蓝色为可以出车</string>
+    <string name="drowouttime_text3">灰色为不可以出车</string>
+    <string name="title_activity_driverdetail_">Driverdetail_Activity</string>
+    <string name="title_activity_rename_">Rename_Activity</string>
+    <string name="title_activity_renamenumber_">Renamenumber_Activity</string>
+    <string name="title_activity_renamevehicle_">Renamevehicle_Activity</string>
+    <string name="title_activity_resetdriverphoto_">Resetdriverphoto_Activity</string>
+    <string name="title_activity_new_route_step1_">NewRoute_step1_Activity</string>
+
+</resources>

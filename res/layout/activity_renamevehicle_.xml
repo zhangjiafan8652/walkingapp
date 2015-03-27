@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/textmax" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true" >
+
+            <Spinner
+                android:id="@+id/sn_register2_vehicle"
+                style="@android:attr/spinnerDropDownItemStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/linemin"
+                android:background="#440000ff"
+                android:gravity="center" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/sn_register2_vehicle"
+                android:background="@drawable/driverdetial_buttonbackground"
+                android:onClick="back"
+                android:layout_marginTop="20dp"
+                android:text="确认"
+                android:textColor="@color/driverdetail_buttonfrontbutton"
+                android:textSize="@dimen/textmid" />
+            
+            <TextView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="点击确定后，请到个人资料中的最下面点击保存。"
+                 android:layout_margin="20dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,844 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/linemin"
+        android:background="@color/alltitilebackground" >
+
+        <ImageButton
+            android:layout_width="@dimen/linemin"
+            android:layout_height="@dimen/linemin"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_web_pre"
+            android:onClick="callback" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="我的资料"
+            android:textColor="@color/titletextbackground"
+            android:textSize="25dp" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/pb_driverdetial"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:id="@+id/ll_driver_nofound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/textmid"
+            android:text="连接网络失败，请检查网络后重新连接"
+            android:textSize="@dimen/textmid" />
+
+        <Button
+            android:id="@+id/but_driver_nofound"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/linemax"
+            android:layout_margin="@dimen/textmid"
+            android:background="@drawable/driverdetial_buttonbackground"
+            android:gravity="center"
+            android:text="重新连接"
+            android:textColor="@color/driverdetail_buttonfrontbutton" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/sv_driverdetial"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/allbackground" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/textmini"
+                android:text="基本资料"
+                android:textSize="@dimen/textmid" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/textmini"
+                android:text="基本资料可以被用户和其他司机看到"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/textmid" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/textmid"
+                android:layout_marginRight="@dimen/textmid"
+                android:layout_marginTop="@dimen/textmini"
+                android:background="@android:color/background_light"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_driverdetial_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/linemid" >
+
+                    <TextView
+                        android:id="@+id/tv_personal_myorder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/textmini"
+                        android:gravity="center"
+                        android:text="名字"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/textmin" />
+
+                    <ImageView
+                        android:id="@+id/iv_imageview_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/textmid"
+                        android:background="@drawable/ic_web_next" />
+
+                    <TextView
+                        android:id="@+id/tv_driverdetial_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toLeftOf="@+id/iv_imageview_name"
+                        android:gravity="center_vertical"
+                        android:text="小兔兔"
+                        android:textSize="@dimen/textmid" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@android:color/darker_gray" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_driverdetial_introduction"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/linemin" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/textmini"
+                        android:gravity="center"
+                        android:text="简介"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/textmin" />
+
+                    <ImageView
+                        android:id="@+id/iv_imageview_name1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/textmid"
+                        android:background="@drawable/ic_web_next" />
+
+                    <TextView
+                        android:id="@+id/tv_driverdetial_introduction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toLeftOf="@+id/iv_imageview_name1"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:maxEms="10"
+                        android:maxLines="1"
+                        android:text="我比较喜欢摄影,跳水。打架。lol"
+                        android:textSize="@dimen/textmid" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@android:color/darker_gray" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_driverdetial_driver_years"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/linemin" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/textmini"
+                        android:gravity="center"
+                        android:text="驾龄"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/textmin" />
+
+                    <ImageView
+                        android:id="@+id/iv_imageview_name2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/textmid"
+                        android:background="@drawable/ic_web_next" />
+
+                    <TextView
+                        android:id="@+id/tv_driverdetial_driver_years"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toLeftOf="@+id/iv_imageview_name2"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textSize="@dimen/textmid" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@android:color/darker_gray" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_driverdetial_main_cities"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/linemin" >
+
+                    <TextView
+                        android:id="@+id/tv_personal_main_cities"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/textmini"
+                        android:gravity="center"
+                        android:text="常在城市"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/textmin" />
+
+                    <ImageView
+                        android:id="@+id/iv_imageview_name3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/textmid"
+                        android:background="@drawable/ic_web_next" />
+
+                    <TextView
+                        android:id="@+id/tv_driverdetial_main_cities"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toLeftOf="@+id/iv_imageview_name3"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textSize="@dimen/textmid" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@android:color/darker_gray" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_driverdetial_nation"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/linemin" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/textmini"
+                        android:gravity="center"
+                        android:text="民族"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/textmin" />
+
+                    <ImageView
+                        android:id="@+id/iv_imageview_name4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/textmid"
+                        android:background="@drawable/ic_web_next" />
+
+                    <TextView
+                        android:id="@+id/tv_driverdetial_nation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toLeftOf="@+id/iv_imageview_name4"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textSize="@dimen/textmid" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@android:color/darker_gray" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_driverdetial_avatar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/textmini"
+                        android:gravity="center"
+                        android:text="头像"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/textmin" />
+
+                    <ImageView
+                        android:id="@+id/iv_imageview_avatar"
+                        android:layout_width="@dimen/photo"
+                        android:layout_height="@dimen/photo"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/textmid"
+                        android:src="@drawable/defpho" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toLeftOf="@+id/iv_imageview_avatar"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textSize="@dimen/textmin" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/textmini"
+                android:text="车辆资料"
+                android:textSize="@dimen/textmid" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/textmini"
+                android:text="认证资料不会被用户或司机看到，我们不会泄露您的隐私"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/textmid" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/textmid"
+                android:layout_marginRight="@dimen/textmid"
+                android:layout_marginTop="@dimen/textmini"
+                android:background="@android:color/background_light"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_driverdetial_vehicle_mode_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/linemid" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/textmini"
+                        android:gravity="center"
+                        android:text="车型"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/textmin" />
+
+                    <ImageView
+                        android:id="@+id/iv_imageview_name6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/textmid"
+                        android:background="@drawable/ic_web_next" />
+
+                    <TextView
+                        android:id="@+id/tv_driverdetial_vehicle_mode_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toLeftOf="@+id/iv_imageview_name6"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textSize="@dimen/textmid" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@android:color/darker_gray" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_driverdetial_vehicle_model"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/linemin" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/textmini"
+                        android:gravity="center"
+                        android:text="车型号"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/textmin" />
+
+                    <ImageView
+                        android:id="@+id/iv_imageview_name7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/textmid"
+                        android:background="@drawable/ic_web_next" />
+
+                    <TextView
+                        android:id="@+id/tv_driverdetial_vehicle_model"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toLeftOf="@+id/iv_imageview_name7"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:maxEms="10"
+                        android:maxLines="1"
+                        android:text=""
+                        android:textSize="@dimen/textmid" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@android:color/darker_gray" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_driverdetial_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/linemin" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/textmini"
+                        android:gravity="center"
+                        android:text="包车价/天"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/textmin" />
+
+                    <ImageView
+                        android:id="@+id/iv_imageview_name8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/textmid"
+                        android:background="@drawable/ic_web_next" />
+
+                    <TextView
+                        android:id="@+id/tv_driverdetial_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toLeftOf="@+id/iv_imageview_name8"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textSize="@dimen/textmid" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@android:color/darker_gray" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_driverdetial_vehicle_years"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/linemin" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/textmini"
+                        android:gravity="center"
+                        android:text="车龄"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/textmin" />
+
+                    <ImageView
+                        android:id="@+id/iv_imageview_name9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/textmid"
+                        android:background="@drawable/ic_web_next" />
+
+                    <TextView
+                        android:id="@+id/tv_driverdetial_vehicle_years"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toLeftOf="@+id/iv_imageview_name9"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textSize="@dimen/textmid" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@android:color/darker_gray" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_driverdetial_passenger_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/linemin" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/textmini"
+                        android:gravity="center"
+                        android:text="建议乘客数"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/textmin" />
+
+                    <ImageView
+                        android:id="@+id/iv_imageview_name10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/textmid"
+                        android:background="@drawable/ic_web_next" />
+
+                    <TextView
+                        android:id="@+id/tv_driverdetial_passenger_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toLeftOf="@+id/iv_imageview_name10"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textSize="@dimen/textmid" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@android:color/darker_gray" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_driverdetial_bag_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/linemin" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/textmini"
+                        android:gravity="center"
+                        android:text="建议行李数"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/textmin" />
+
+                    <ImageView
+                        android:id="@+id/iv_imageview_name11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/textmid"
+                        android:background="@drawable/ic_web_next" />
+
+                    <TextView
+                        android:id="@+id/tv_driverdetial_bag_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toLeftOf="@+id/iv_imageview_name11"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textSize="@dimen/textmid" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@android:color/darker_gray" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_driverdetial_vehicle_photo_url"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/textmini"
+                        android:gravity="center"
+                        android:text="车辆图片"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/textmin" />
+
+                    <ImageView
+                        android:id="@+id/iv_imageview_vehicle_photo_url"
+                        android:layout_width="@dimen/photo"
+                        android:layout_height="@dimen/photo"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/textmid"
+                        android:src="@drawable/defpho" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toLeftOf="@+id/iv_imageview_vehicle_photo_url"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textSize="@dimen/textmin" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/textmini"
+                android:text="认证资料"
+                android:textSize="@dimen/textmid" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/textmini"
+                android:text="认证资料可以被用户和其他司机看到"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/textmid" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/textmid"
+                android:layout_marginRight="@dimen/textmid"
+                android:layout_marginTop="@dimen/textmini"
+                android:background="@android:color/background_light"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@android:color/darker_gray" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_driverdetial_vehicle_driving"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/textmini"
+                        android:gravity="center"
+                        android:text="车辆行驶证"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/textmin" />
+
+                    <ImageView
+                        android:id="@+id/iv_imageview_vehicle_driving"
+                        android:layout_width="@dimen/photo"
+                        android:layout_height="@dimen/photo"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/textmid"
+                        android:src="@drawable/defpho" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toLeftOf="@+id/iv_imageview_vehicle_driving"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textSize="@dimen/textmin" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@android:color/darker_gray" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_driverdetial_driver_license"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/textmini"
+                        android:gravity="center"
+                        android:text="驾驶证"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/textmin" />
+
+                    <ImageView
+                        android:id="@+id/iv_imageview_driver_license"
+                        android:layout_width="@dimen/photo"
+                        android:layout_height="@dimen/photo"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/textmid"
+                        android:src="@drawable/defpho" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toLeftOf="@+id/iv_imageview_driver_license"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textSize="@dimen/textmin" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@android:color/darker_gray" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_driverdetial_operating_certificate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/textmini"
+                        android:gravity="center"
+                        android:text="营运证"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/textmin" />
+
+                    <ImageView
+                        android:id="@+id/iv_imageview_operating_certificate"
+                        android:layout_width="@dimen/photo"
+                        android:layout_height="@dimen/photo"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/textmid"
+                        android:src="@drawable/defpho" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toLeftOf="@+id/iv_imageview_operating_certificate"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textSize="@dimen/textmin" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@android:color/darker_gray" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_driverdetial_license_plate_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/linemin" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/textmini"
+                        android:gravity="center"
+                        android:text="车牌号"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/textmin" />
+
+                    <ImageView
+                        android:id="@+id/iv_imageview_name13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/textmid"
+                        android:background="@drawable/ic_web_next" />
+
+                    <TextView
+                        android:id="@+id/tv_driverdetial_license_plate_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toLeftOf="@+id/iv_imageview_name13"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textSize="@dimen/textmid" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/linemax"
+                android:layout_margin="@dimen/textmid"
+                android:background="@drawable/driverdetial_buttonbackground"
+                android:gravity="center"
+                android:onClick="savetointernet"
+                android:text="保存"
+                android:textColor="@color/driverdetail_buttonfrontbutton" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

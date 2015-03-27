@@ -1,0 +1,59 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--全局标题宽度和字体大小-->
+    <dimen name="globaltitleheight">50dp</dimen>
+    <dimen name="globaltitletextsize">25dp</dimen>
+
+    <!--杂七八宽度大小-->
+    <dimen name="linemax">65dp</dimen>
+    <dimen name="linemin">50dp</dimen>
+    <dimen name="listviewitemout">240dp</dimen>
+    <dimen name="listviewitemin">220dp</dimen>
+    <dimen name="edviryfy">120dp</dimen>
+    <dimen name="refresh_headerheight">120dp</dimen>
+    <dimen name="photo">90dp</dimen>
+    <dimen name="regist2textsize">18dp</dimen>
+
+
+    <!--mainui中字体的大小-->
+    <dimen name="mainui_buttomtextsize">14dp</dimen>
+
+
+    <!--订单页面的文字大小-->
+    <dimen name="orderrecord_listitemsize">18dp</dimen>
+
+
+    <!--listview的下拉刷新脚布局-->
+
+    <dimen name="linemid">60dp</dimen>
+    <dimen name="textmini">10dp</dimen>
+    <dimen name="linemini">30dp</dimen>
+    <dimen name="textmax">25dp</dimen>
+    <dimen name="textmid">18dp</dimen>
+    <dimen name="textmin">15dp</dimen>
+
+    <!--orderlistviewitem布局-->
+    <dimen name="listviewitem_maginleft">20dp</dimen>
+    <dimen name="listviewitem_maginright">20dp</dimen>
+    <dimen name="listviewitem_magintop">20dp</dimen>
+    <dimen name="listviewitem_textsize">18dp</dimen>
+    <dimen name="listviewitem_textmagin">6dp</dimen>
+
+
+    <!-- slash页面气球的图片的大小 -->
+
+    <dimen name="slashsizewith">250dp</dimen>
+    <dimen name="slashsizeheight">240dp</dimen>
+
+    <!-- login页面头像图片的大小 -->
+
+    <dimen name="loginsizewith">150dp</dimen>
+
+    <!-- 	longin页面的宽高 -->
+    <string name="save">保存</string>
+    <dimen name="loginwidth">50dp</dimen>
+
+</resources>

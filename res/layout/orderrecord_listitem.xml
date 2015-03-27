@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/allbackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:background="@color/write">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="@dimen/listviewitem_maginleft"
+            android:layout_marginRight="@dimen/listviewitem_maginright"
+            android:layout_marginTop="@dimen/listviewitem_magintop"
+            android:background="@color/write"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_orderlistitem_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="仙本那海岛之旅  4天3晚海岛4日游"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/listviewitem_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_orderlistitem_route"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/listviewitem_textmagin"
+                    android:text="途径：仙本那-马布岛-美人鱼岛-马盖岛-格林兰岛-冰岛"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/listviewitem_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/listviewitem_textmagin">
+
+                <TextView
+                    android:id="@+id/tv_orderlistitem_days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="共6天"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/listviewitem_textsize" />
+
+                <TextView
+                    android:id="@+id/tv_orderlistitem_daytime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/listviewitem_textmagin"
+                    android:text="2.05-2.10"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/listviewitem_textsize" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/listviewitem_textmagin"
+                android:background="@color/gray"
+                android:textColor="@color/black"></TextView>
+
+            <TextView
+                android:id="@+id/tv_orderlistitem_passengers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/listviewitem_textmagin"
+                android:text="乘客数：1人"
+                android:textColor="@color/black"
+                android:textSize="@dimen/listviewitem_textsize" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/listviewitem_textmagin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lisview_item_remainmoney"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/listviewitem_textsize" />
+
+                <TextView
+                    android:id="@+id/tv_orderlistitem_ordermoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥1280"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/listviewitem_textsize" />
+
+                <TextView
+                    android:id="@+id/tv_orderlistitem_cartype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" (越野车)"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/listviewitem_textsize" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/listviewitem_textmagin"
+                android:background="@color/gray"
+                android:textColor="@color/black"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/listviewitem_textmagin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lisview_item_customer"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/listviewitem_textsize" />
+
+                <TextView
+                    android:id="@+id/tv_orderlistitem_customer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="林北"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/listviewitem_textsize" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="联系人电话："
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/listviewitem_textsize" />
+
+                <TextView
+                    android:id="@+id/tv_orderlistitem_customer_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18618377889"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/listviewitem_textsize" />
+
+                <Button
+                    android:id="@+id/but_orderlistitem_callphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/write"
+                    android:text="拨打"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

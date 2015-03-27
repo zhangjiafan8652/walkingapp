@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/allbackground"
+    tools:context="com.zouzhe.walkingapp.Route_Activity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/globaltitleheight"
+        android:background="@color/alltitilebackground" >
+
+        <TextView
+            android:id="@+id/tv_myroute_titile"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="我的线路"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/globaltitletextsize" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/lv_myroute_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/globaltitleheight" >
+        </ListView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/globaltitleheight"
+            android:layout_alignParentBottom="true"
+            android:background="@color/alltitilebackground" >
+
+            <ImageView
+                android:id="@+id/iv_route_pre"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_web_pre"
+                 />
+            
+            
+        <TextView
+            android:id="@+id/tv_route_edroute"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="添加线路"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/globaltitletextsize"
+            android:clickable="true" />
+            
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

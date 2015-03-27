@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/linemin"
+        android:background="@color/alltitilebackground" >
+
+        <ImageButton
+            android:layout_width="@dimen/linemin"
+            android:layout_height="@dimen/linemin"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_web_pre"
+            android:onClick="callback" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="平台规则"
+            android:textColor="@color/titletextbackground"
+            android:textSize="@dimen/textmax" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="一、合作内容："
+                android:textSize="@dimen/textmid" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:lineSpacingMultiplier="1.2"
+                android:text="走着旅行向合作方提供需要旅行中目的地服务(包含但不仅限于包车、船、热气球、潜水等目的地服务)的信息，合作方为走着旅行客户提供服务。为规范合作，合作方须按照走着旅行制定的收费标准向客户收取服务费用；走着旅行按照本合同约定从合作方收取客户的服务费中扣取相应的信息服务费用。"
+                android:textSize="@dimen/textmin" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="二、合作条件："
+                android:textSize="@dimen/textmid" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:lineSpacingMultiplier="1.2"
+                android:text="1. 走着旅行：具备专门的信息服务团队和稳定的硬件设施，拥有自身研发的旅行线路运营管理系统，可以通过己方信息技术平台接受客户的服务预约信息，并及时将具体的订单信息提供给合作方。"
+                android:textSize="@dimen/textmin" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:lineSpacingMultiplier="1.2"
+                android:text="2. 合作方：有在其服务领域内服务过客人的经验与能力，并取得相应的服务执照。"
+                android:textSize="@dimen/textmin" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="三、合作流程："
+                android:textSize="@dimen/textmid" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:lineSpacingMultiplier="1.2"
+                android:text="1. 由走着旅行接受客户预约信息，通过己方信息平台向合作方推送服务消息；或由走着旅行告知客户直接与合作方联系。"
+                android:textSize="@dimen/textmin" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:lineSpacingMultiplier="1.2"
+                android:text="2. 合作方接受客人的服务信息后，依据本协议及附件约定，独立完成服务。"
+                android:textSize="@dimen/textmin" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="四、双方权利与义务："
+                android:textSize="@dimen/textmid" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:lineSpacingMultiplier="1.2"
+                android:text="1. 合作方应当及时关注和接收走着旅行网站发布的信息或通过手机客户端接收向合作方推送的消息（包括但不限于新的合作政策、收费标准、订单信息等），乙方依据《走着旅行服务流程》完成服务，并有义务向客户推广走着旅行的服务和产品。"
+                android:textSize="@dimen/textmin" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:lineSpacingMultiplier="1.2"
+                android:text="2. 本协议签订时，合作方须向走着旅行提供真实的身份证明、行业从业资格证明以及车辆行驶证等的电子照片，并保证上述证件在合作期内合法、有效。"
+                android:textSize="@dimen/textmin" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:lineSpacingMultiplier="1.2"
+                android:text="3. 若合作方违反本协议或双方其他约定的，走着旅行根据造成影响的程度，有权单方终止双方的合作关系，给走着旅行造成损失的，合作方应当承当赔偿责任。"
+                android:textSize="@dimen/textmin" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:lineSpacingMultiplier="1.2"
+                android:text="4. 合作方明确同意其在走着旅行接单之后的风险将完全由其自己承担；因其在服务客人过程中而产生的一切后果也由其自己承担，走着旅行对客人不承担任何责任。"
+                android:textSize="@dimen/textmin" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:lineSpacingMultiplier="1.2"
+                android:text="5. 走着旅行免费为合作方提供以下合作项目："
+                android:textSize="@dimen/textmin" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:lineSpacingMultiplier="1.2"
+                android:text="（1）提供服务客户的电话、称呼等基本信息。"
+                android:textSize="@dimen/textmin" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:lineSpacingMultiplier="1.2"
+                android:text="（2）对合作方进行服务记录。"
+                android:textSize="@dimen/textmin" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:lineSpacingMultiplier="1.2"
+                android:text="（3）对合作方进行星级评价。"
+                android:textSize="@dimen/textmin" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:lineSpacingMultiplier="1.2"
+                android:text="（4）走着旅行享有对合作方服务的定价权。"
+                android:textSize="@dimen/textmin" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="五、收益分配与结算"
+                android:textSize="@dimen/textmid" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:lineSpacingMultiplier="1.2"
+                android:text="1. 走着旅行向合作方提供服务信息，暂定按每次服务实际收费的15%向合作方收取信息费。"
+                android:textSize="@dimen/textmin" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:lineSpacingMultiplier="1.2"
+                android:text="2. 通过走着旅行预约渠道直接预约合作方向客户提供服务的，视为走着旅行向合作方提供了服务信息，走着旅行有权对该笔服务收取信息费。"
+                android:textSize="@dimen/textmin" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:lineSpacingMultiplier="1.2"
+                android:text="3. 随着市场的变化以及竞争情况的改变，走着旅行有权合理调整对合作方方收取的信息费，特殊情况下信息费用的收取由走着旅行另行通知合作方。"
+                android:textSize="@dimen/textmin" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="六、乙方违约处理"
+                android:textSize="@dimen/textmid" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:lineSpacingMultiplier="1.2"
+                android:text="1. 合作方在确认接受走着旅行提供的订单之后，如果私自变更服务车辆，走着旅行有权取消订单，并且对于合作方做相关的处罚；并造成的损失，由合作方承担。"
+                android:textSize="@dimen/textmin" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:lineSpacingMultiplier="1.2"
+                android:text="2. 合作方在确认接受走着旅行提供的订单之后，如果未按照事先约定的提供服务，走着旅行有权取消订单，并且对于该合作方做相关的处罚；并造成的损失，由合作方承担。"
+                android:textSize="@dimen/textmin" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:lineSpacingMultiplier="1.2"
+                android:text="3. 合作方在服务客人的过程中，不能未经客人同意，带其去任何消费场所进行消费，如有此情况，一经发现，走着旅行有权立马终止与合作方的合作，删除其在走着旅行平台上的所有信息。"
+                android:textSize="@dimen/textmin" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:lineSpacingMultiplier="1.2"
+                android:text="4. 合作方在服务客人的过程中，不能未经客人同意中途涨价，如有此情况，一经发现，走着旅行有权立马终止与合作方的合作，删除其在走着旅行平台上的所有信息。"
+                android:textSize="@dimen/textmin" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:lineSpacingMultiplier="1.2"
+                android:text="5. 合作方在服务中须维护走着旅行的声誉及品牌形象，不得以任何形式损害走着旅行的形象（合作终止后仍适用），否则，合作方须承担由其损害行为产生的一切法律责任并赔偿走着旅行的损失。"
+                android:textSize="@dimen/textmin" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:lineSpacingMultiplier="1.2"
+                android:text="6. 如合作方违反本合作协议及附件约定，给走着旅行造成损失的，走着旅行有权继续向合作方追偿。"
+                android:textSize="@dimen/textmin" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="七、争议解决："
+                android:textSize="@dimen/textmid" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:lineSpacingMultiplier="1.2"
+                android:text="1. 由于履行本协议产生争议，双方均应通过友好协商的方式解决。"
+                android:textSize="@dimen/textmin" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:lineSpacingMultiplier="1.2"
+                android:text="2. 协商无法解决时，双方应提交走着旅行注册地人民法院管辖。"
+                android:textSize="@dimen/textmin" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:lineSpacingMultiplier="1.2"
+                android:text="声明：1、本协议及附件仅约定代驾合作内容，双方不构成劳动、劳务或雇佣关系。"
+                android:textSize="@dimen/textmin" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

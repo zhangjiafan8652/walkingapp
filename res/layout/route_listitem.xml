@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/allbackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+       
+        android:background="@color/write">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="@dimen/listviewitem_maginleft"
+            android:layout_marginRight="@dimen/listviewitem_maginright"
+            android:layout_marginTop="@dimen/listviewitem_magintop"
+            android:background="@color/write"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_myrouteitem_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="仙本那海岛之旅  4天3晚海岛4日游"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/listviewitem_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_myrouteitem_route"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/listviewitem_textmagin"
+                    android:text="途径：仙本那-马布岛-美人鱼岛-马盖岛-格林兰岛-冰岛"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/listviewitem_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/listviewitem_textmagin">
+                <TextView
+                    android:id="@+id/tv_myrouteitem_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥800/人"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/listviewitem_textsize" />
+                <TextView
+                    android:id="@+id/tv_myrouteitem_days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/listviewitem_textmagin"
+                    android:text="共6天"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/listviewitem_textsize" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="maintitlcolor">#00B271</color>
+    <color name="main_button_selectcolor">#949494</color>
+    <color name="allbackground">#dedede</color>
+    <color name="allblue">#2294e6</color>
+    <color name="origin">#ee8e03</color>
+    <color name="titletextbackground">#ffffff</color>
+    <color name="green">#00ff00</color>
+    <color name="yellowred">#ef856f</color>
+    <color name="write">#ffffff</color>
+    <color name="drowouttimesave">#0BD44E</color>
+    <color name="alltitilebackground">#F73E3E</color>
+    <color name="gray">#ffbcb7b9</color>
+    <color name="black">#ff000000</color>
+    <color name="titlebackground">#F73E3E</color>
+
+</resources>

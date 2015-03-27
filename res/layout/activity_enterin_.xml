@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/textmid"
+            android:text="请输入您的手机号，点击“发送验证码”;点击“下一步”，加入“走着旅行”平台来接单" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/ed_phonenumber"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/linemid"
+                android:layout_weight="1"
+                android:hint="手机号码"
+                android:inputType="phone" />
+
+            <Button
+                android:id="@+id/bt_sendverify_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/loginbackground"
+                android:padding="@dimen/textmini"
+                android:text="发送验证码"
+                android:textSize="@dimen/textmid"
+                android:textColor="@color/loginfront" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_inputverify_code"
+            android:layout_width="@dimen/edviryfy"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp" />
+
+        <Button
+            android:id="@+id/bt_submitverify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/textmini"
+            android:background="@drawable/loginbackground"
+            android:text="登录"
+            android:padding="@dimen/textmini"
+            android:textSize="@dimen/textmid"
+            android:textColor="@color/loginfront" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/textmid"
+            android:text="信号不好的情况下，收到验证码短信的时间可能会超过1分钟，请您耐心等待" />
+    </LinearLayout>
+
+</RelativeLayout>

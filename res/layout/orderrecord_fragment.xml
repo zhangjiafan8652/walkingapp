@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/allbackground"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/linemin"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/tv_orderfragment_rushfunction"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/textmin"
+            android:text="@string/grabsingle"
+            android:textColor="#000000"
+            android:textSize="@dimen/textmax" />
+
+        <ImageView
+            android:id="@+id/iv_orderfragment_swichicon"
+            android:layout_width="@dimen/linemin"
+            android:layout_height="@dimen/linemin"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/textmid"
+            android:clickable="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/switchon" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_orderrecord_nofound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/textmid"
+            android:text="连接网络失败，请检查网络后重新连接"
+            android:textSize="@dimen/textmid" />
+
+        <Button
+            android:id="@+id/but_driver_nofound"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/linemax"
+            android:layout_margin="@dimen/textmid"
+            android:background="@drawable/driverdetial_buttonbackground"
+            android:gravity="center"
+            android:text="重新连接"
+            android:textColor="@color/driverdetail_buttonfrontbutton" />
+    </LinearLayout>
+
+    <com.zouzhe.walkingapp.myview.RefreshListView
+        android:id="@+id/rlv_orderrecord"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="65dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/write"
+        android:visibility="gone" >
+    </com.zouzhe.walkingapp.myview.RefreshListView>
+
+    <ProgressBar
+        android:id="@+id/pb_orderrecord_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+
+</LinearLayout>

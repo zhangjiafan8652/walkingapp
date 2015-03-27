@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/textmini"
+        android:layout_marginRight="@dimen/textmini" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/textmini"
+                android:text="请完善以下信息，让你旅行者更容易找到您" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textmini"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:focusable="false"
+                    android:background="@color/allbackground"
+                    android:textSize="@dimen/regist2textsize"
+                    android:text="姓名：" />
+
+                <EditText
+                    android:id="@+id/ed_register2_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/regist2textsize"
+                    android:hint="请填写真实姓名" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textmini"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:focusable="false"
+                    android:background="@color/allbackground"
+                    android:textSize="@dimen/regist2textsize"
+                    android:text="民族：" />
+
+                <EditText
+                    android:id="@+id/ed_register2_nation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/regist2textsize"
+                    android:hint="如：汉族" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textmini"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:focusable="false"
+                    android:background="@color/allbackground"
+                    android:textSize="@dimen/regist2textsize"
+                    android:text="所在地（常在地）：" />
+
+                <EditText
+                    android:id="@+id/ed_register2_position"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/regist2textsize"
+                    android:hint="如：丽江" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textmini"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:focusable="false"
+                    android:background="@color/allbackground"
+                    android:textSize="@dimen/regist2textsize"
+                    android:text="驾龄（年）：" />
+
+                <EditText
+                    android:id="@+id/ed_regist2_vehicle_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/regist2textsize"
+                    android:hint="如：3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textmini"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/regist2textsize"
+                    android:focusable="false"
+                    android:background="@color/allbackground"
+                    android:text="车型号：" />
+
+                <EditText
+                    android:id="@+id/ed_regist2_vehicle_model"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/regist2textsize"
+                    android:hint="如：三菱猎豹" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textmini"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:focusable="false"
+                    android:background="@color/allbackground"
+                    android:textSize="@dimen/regist2textsize"
+                    android:text="可坐人数：" />
+
+                <EditText
+                    android:id="@+id/ed_regist2_passenger_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/regist2textsize"
+                    android:hint="如：8" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textmini"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:focusable="false"
+                    android:background="@color/allbackground"
+                    android:textSize="@dimen/regist2textsize"
+                    android:text="价格（元/天）：" />
+
+                <EditText
+                    android:id="@+id/ed_regist2_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/regist2textsize"
+                    android:hint="如：800" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textmini"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:focusable="false"
+                    android:background="@color/allbackground"
+                    android:textSize="@dimen/regist2textsize"
+                    android:text="车牌号：" />
+
+                <EditText
+                    android:id="@+id/ed_regist2_license_plate_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/regist2textsize"
+                    android:hint="如：云pk1234" />
+            </LinearLayout>k
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textmini"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    
+                    android:background="@color/allbackground"
+                    android:textSize="@dimen/regist2textsize"
+                    android:text="价格说明" />
+
+                <EditText
+                    android:id="@+id/ed_regist2_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/regist2textsize"
+                    android:hint="如：包住宿、包油费，如果没有特别说明可以不填" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textmini"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/regist2textsize"
+                    android:background="@color/allbackground"
+                    android:text="车型" />
+
+                <Spinner
+                    android:id="@+id/sn_register2_vehicle"
+                    style="@android:attr/spinnerDropDownItemStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" />
+            </LinearLayout>
+
+         
+            <Button
+                android:id="@+id/bt_regist2_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/linemini"
+                android:layout_marginRight="@dimen/linemini"
+                android:layout_marginTop="@dimen/textmini"
+                android:textColor="@color/loginfront"
+                android:background="@drawable/loginbackground"
+                android:text="保存" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

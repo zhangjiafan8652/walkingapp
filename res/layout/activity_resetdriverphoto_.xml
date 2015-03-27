@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/bt_resetdriverphoto_save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/linemin"
+        android:layout_margin="@dimen/textmid"
+        android:background="@drawable/driverdetial_buttonbackground"
+        android:gravity="center"
+        android:text="保存"
+        android:textColor="@color/driverdetail_buttonfrontbutton" />
+
+    <Button
+        android:id="@+id/bt_resetdriverphoto_selectphoto"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/linemin"
+        android:layout_margin="@dimen/textmid"
+        android:background="@drawable/driverdetial_buttonbackground"
+        android:gravity="center"
+        android:text="选择图片"
+        android:textColor="@color/driverdetail_buttonfrontbutton" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="点击确定后，请到个人资料中的最下面点击保存。" />
+
+    <ImageView
+        android:id="@+id/iv_resetdriverphoto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/textmin" />
+
+</LinearLayout>

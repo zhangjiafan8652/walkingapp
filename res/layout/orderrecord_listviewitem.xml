@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="大理-双廊-沪沽湖 （￥800/人）"
+        android:textColor="@color/black"
+        android:textSize="@dimen/orderrecord_listitemsize" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="2.05-2.10(共6天)"
+        android:textColor="@color/black"
+        android:textSize="@dimen/orderrecord_listitemsize" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="越野车"
+        android:textColor="@color/black"
+        android:textSize="@dimen/orderrecord_listitemsize" />
+
+    <TextViewview
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="乘客数：2人"
+        android:textColor="@color/black"
+        android:textSize="@dimen/orderrecord_listitemsize" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="已付定金：￥320人"
+        android:textColor="@color/black"
+        android:textSize="@dimen/orderrecord_listitemsize" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="剩余尾款：￥1280人"
+        android:textColor="@color/black"
+        android:textSize="@dimen/orderrecord_listitemsize" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="联系人：林北"
+        android:textColor="@color/black"
+        android:textSize="@dimen/orderrecord_listitemsize" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="联系电话：15521054332"
+        android:textColor="@color/black"
+        android:textSize="@dimen/orderrecord_listitemsize" />
+</LinearLayout>

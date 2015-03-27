@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zouzhe.walkingapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+
+    <application
+        android:name=".myapplication.Walkingaplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Splash_Activity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Mainui_Activity" >
+        </activity>
+        <activity
+            android:name=".Route_editor_Activity"
+            android:label="@string/title_activity_route_editor_" >
+        </activity>
+        <activity
+            android:name=".Route_Activity"
+            android:label="@string/title_activity_route_" >
+        </activity>
+        <activity
+            android:name=".Login_Activity"
+            android:label="@string/title_activity_login_" >
+        </activity>
+        <activity
+            android:name=".Rules_Activity"
+            android:label="@string/title_activity_rules_" >
+        </activity>
+        <activity
+            android:name=".register.Register1"
+            android:label="@string/title_activity_rules_" >
+        </activity>
+        <activity
+            android:name=".register.Register2"
+            android:label="@string/title_activity_rules_" >
+        </activity>
+        <activity
+            android:name=".register.Register3"
+            android:label="@string/title_activity_rules_" >
+        </activity>
+        <activity
+            android:name=".register.Register4"
+            android:label="@string/title_activity_rules_" >
+        </activity>
+        <activity
+            android:name=".Enterin_Activity"
+            android:label="@string/title_activity_enterin_" >
+        </activity>
+        <activity
+            android:name=".Driverdetail_Activity"
+            android:label="@string/title_activity_driverdetail_" >
+        </activity>
+        <activity
+            android:name=".Rename_Activity"
+            android:label="@string/title_activity_rename_" >
+        </activity>
+        <activity
+            android:name=".Renamenumber_Activity"
+            android:label="@string/title_activity_renamenumber_" >
+        </activity>
+        <activity
+            android:name=".Renamevehicle_Activity"
+            android:label="@string/title_activity_renamevehicle_" >
+        </activity>
+        <activity
+            android:name=".Resetdriverphoto_Activity"
+            android:label="@string/title_activity_resetdriverphoto_" >
+        </activity>
+        <activity
+            android:name=".NewRoute_step1_Activity"
+            android:label="@string/title_activity_new_route_step1_" >
+        </activity>
+    </application>
+
+</manifest>

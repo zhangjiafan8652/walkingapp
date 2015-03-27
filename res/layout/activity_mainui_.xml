@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/globaltitleheight"
+            android:background="@color/alltitilebackground">
+
+            <TextView
+                android:id="@+id/tv_mainui_titile"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="接单记录"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/globaltitletextsize" />
+
+            <TextView
+                android:id="@+id/tv_mainui_message"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="消息中心"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_main_ui_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_mainui_viewpage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <RadioGroup
+
+                android:id="@+id/rg_mainui_selectitem"
+                android:layout_width="fill_parent"
+                android:layout_height="65dp"
+                android:layout_gravity="left|bottom"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_mainui_OrderRecord"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@color/blue"
+                    android:button="@null"
+                    android:background="@drawable/button_bg"
+                    android:gravity="center"
+                    android:text="接单记录"
+                    android:textSize="@dimen/mainui_buttomtextsize" />
+
+                <RadioButton
+                    android:id="@+id/rb_mainui_NowRecord"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="现场成单"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/mainui_buttomtextsize" />
+                <!--
+
+                                <RadioButton
+                                    android:id="@+id/rb_mainui_NowCarpooling"
+                                    android:layout_width="100dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/button_bg"
+                                    android:button="@null"
+                                    android:gravity="center"
+                                    android:text="发起拼车"
+                                    android:textSize="@dimen/mainui_buttomtextsize" />
+                -->
+
+                <RadioButton
+                    android:id="@+id/rb_mainui_Persondetail"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:textColor="@color/blue"
+                    android:text="个人中心"
+                    android:textSize="@dimen/mainui_buttomtextsize" />
+
+                <RadioButton
+                    android:id="@+id/rb_mainui_MySchedule"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:textColor="@color/blue"
+                    android:text="档期管理"
+                    android:textSize="@dimen/mainui_buttomtextsize" />
+
+
+            </RadioGroup>
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>
